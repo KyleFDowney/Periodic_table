@@ -1,0 +1,1967 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+h2 {
+margin: 0;
+padding: 0;
+}
+
+table, th, td {
+    border-collapse: collapse;
+    font-family:Arial;
+}
+th, td {
+    text-align: left;
+}
+
+td {
+max-width:0;
+max-height:0;
+}
+
+.first {
+width:100%;
+margin-bottom:2%;
+
+}
+
+.second {
+width:80%;
+margin-left:14%;
+margin-right:6%;
+margin-bottom:2%;
+}
+
+.third {
+width:60%;
+margin-left:22%;
+margin-right:18%;
+
+}
+.third_row {
+font-size: 2vw;
+}
+
+div {
+border: solid 1px black;
+padding: 1%;
+
+
+
+}
+
+number {
+display: block;
+font-size:0.65vw;
+}
+
+element {
+display: block;
+font-size:2.5vw;
+font-weight:bold;
+text-align:center;
+
+}
+
+element_name {
+display: block;
+font-size:0.65vw;
+text-align:center;
+
+}
+
+
+atomic_number {
+display: block;
+font-size:0.65vw;
+font-weight:bold;
+text-align:center;
+}
+
+.single_line {
+padding-top: 10%;
+padding-bottom: 10%;
+}
+
+.third_div {
+padding-top:14%;
+max-height: 1.4em;
+min-height: 1.4em;
+
+}
+
+.element_mini {
+font-size:0.8vw;
+}
+
+.red {
+  background: red; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left top, white, red); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom right, white, red); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(bottom right, white, red); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom right, white, red); /* Standard syntax */
+}
+
+
+.orange {
+  background: orange; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left top, white, orange); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom right, white, orange); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(bottom right, white, orange); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom right, white, orange); /* Standard syntax */
+}
+
+.yellow {
+  background: yellow; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left top, white, yellow); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom right, white, yellow); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(bottom right, white, yellow); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom right, white, yellow); /* Standard syntax */
+}
+
+.green {
+  background: green; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left top, white, green); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom right, white, green); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(bottom right, white, green); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom right, white, green); /* Standard syntax */
+}
+
+.cyan {
+  background: cyan; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left top, white, cyan); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom right, white, cyan); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(bottom right, white, cyan); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom right, white, cyan); /* Standard syntax */
+}
+
+.blue {
+  background: blue; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left top, white, blue); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom right, white, blue); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(bottom right, white, blue); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom right, white, blue); /* Standard syntax */
+}
+
+.lavender {
+  background: #EE82EE; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left top, white, #EE82EE); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom right, white, #EE82EE); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(bottom right, white, #EE82EE); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom right, white, #EE82EE); /* Standard syntax */
+}
+
+.violet {
+  background: purple; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left top, white, purple); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom right, white, purple); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(bottom right, white, purple); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom right, white, purple); /* Standard syntax */
+}
+
+.pink {
+  background: #DB7093; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left top, white, #DB7093); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom right, white, #DB7093); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(bottom right, white, #DB7093); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom right, white, #DB7093); /* Standard syntax */
+}
+
+.magenta {
+  background: #ff003f; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left top, white, #ff003f); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom right, white, #ff003f); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(bottom right, white, #ff003f); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom right, white, #ff003f); /* Standard syntax */
+}
+
+</style>
+</head>
+<body>
+<table class="first">
+  <tr>
+  	<td>
+    	<div class="blue">
+    		<number>
+            1
+            </number>
+            <element>
+            H
+            </element>
+            <element_name>
+            Hydrogen
+            </element_name>
+            <atomic_number>
+            1.008
+            </atomic_number>
+    	</div>
+    </td>
+    <td colspan="16"><center><h2>Periodic Table of Elements</h2></center></td>
+    <td><div class="violet">
+    		<number>
+            2
+            </number>
+            <element>
+            He
+            </element>
+            <element_name>
+            Helium
+            </element_name>
+            <atomic_number>
+            4.003
+            </atomic_number>
+    	</div></td>
+  </tr>
+  <tr>
+    <td><div class="red">
+    		<number>
+            3
+            </number>
+            <element>
+            Li
+            </element>
+            <element_name>
+            Lithium
+            </element_name>
+            <atomic_number>
+            6.941
+            </atomic_number>
+    	</div></td>
+    <td><div class="orange">
+    		<number>
+            4
+            </number>
+            <element>
+            Be
+            </element>
+            <element_name>
+            Berylium
+            </element_name>
+            <atomic_number>
+            9.012
+            </atomic_number>
+    	</div></td>
+    <td colspan="10"> </td>
+    <td><div class="cyan">
+    		<number>
+            5
+            </number>
+            <element>
+            B
+            </element>
+            <element_name>
+            Boron
+            </element_name>
+            <atomic_number>
+            10.881
+            </atomic_number>
+    	</div></td>
+    <td><div class="blue">
+    		<number>
+            6
+            </number>
+            <element>
+            C
+            </element>
+            <element_name>
+            Carbon
+            </element_name>
+            <atomic_number>
+            12.011
+            </atomic_number>
+    	</div></td>
+    <td><div class="blue">
+    		<number>
+            7
+            </number>
+            <element>
+            N
+            </element>
+            <element_name>
+            Nitrogen
+            </element_name>
+            <atomic_number>
+            14.007
+            </atomic_number>
+    	</div></td>
+    <td><div class="blue">
+    		<number>
+            8
+            </number>
+            <element>
+            O
+            </element>
+            <element_name>
+            Oxygen
+            </element_name>
+            <atomic_number>
+            15.999
+            </atomic_number>
+    	</div></td>
+    <td><div class="lavender">
+    		<number>
+            9
+            </number>
+            <element>
+            F
+            </element>
+            <element_name>
+            Fluorine
+            </element_name>
+            <atomic_number>
+            18.998
+            </atomic_number>
+    	</div></td>
+    <td><div class="violet">
+    		<number>
+            10
+            </number>
+            <element>
+            Ne
+            </element>
+            <element_name>
+            Neon
+            </element_name>
+            <atomic_number>
+            20.180
+            </atomic_number>
+    	</div></td>
+  </tr>
+    <tr>
+    <td><div class="red">
+    		<number>
+            11
+            </number>
+            <element>
+            Na
+            </element>
+            <element_name>
+            Sodium
+            </element_name>
+            <atomic_number>
+            22.990
+            </atomic_number>
+    	</div></td>
+    <td><div class="orange">
+    		<number>
+            12
+            </number>
+            <element>
+            Mg
+            </element>
+            <element_name>
+            Magnesium
+            </element_name>
+            <atomic_number>
+            24.305
+            </atomic_number>
+    	</div></td>
+    <td colspan="10"> </td>
+    <td><div class="green">
+    		<number>
+            13
+            </number>
+            <element>
+            Al
+            </element>
+            <element_name>
+            Aluminium
+            </element_name>
+            <atomic_number>
+            26.982
+            </atomic_number>
+    	</div></td>
+    <td><div class="cyan">
+    		<number>
+            14
+            </number>
+            <element>
+            Si
+            </element>
+            <element_name>
+            Silicon
+            </element_name>
+            <atomic_number>
+            28.086
+            </atomic_number>
+    	</div></td>
+    <td><div class="blue">
+    		<number>
+            15
+            </number>
+            <element>
+            P
+            </element>
+            <element_name>
+            Phosphorus
+            </element_name>
+            <atomic_number>
+            30.974
+            </atomic_number>
+    	</div></td>
+    <td><div class="blue">
+    		<number>
+            16
+            </number>
+            <element>
+            S
+            </element>
+            <element_name>
+            Sulfur
+            </element_name>
+            <atomic_number>
+            32.066
+            </atomic_number>
+    	</div></td>
+    <td><div class="lavender">
+    		<number>
+            17
+            </number>
+            <element>
+            Cl
+            </element>
+            <element_name>
+            Chlorine
+            </element_name>
+            <atomic_number>
+            35.453
+            </atomic_number>
+    	</div></td>
+    <td><div class="violet">
+    		<number>
+            18
+            </number>
+            <element>
+            A
+            </element>
+            <element_name>
+            Argon
+            </element_name>
+            <atomic_number>
+            39.948
+            </atomic_number>
+    	</div></td>
+  </tr>
+  <tr>
+	<td><div class="red">
+    		<number>
+            19
+            </number>
+            <element>
+            K
+            </element>
+            <element_name>
+            Potassium
+            </element_name>
+            <atomic_number>
+            39.098
+            </atomic_number>
+    	</div></td>
+    <td><div class="orange">
+    		<number>
+            20
+            </number>
+            <element>
+            Ca
+            </element>
+            <element_name>
+            Calcium
+            </element_name>
+            <atomic_number>
+            40.078
+            </atomic_number>
+    	</div></td>
+    <td><div class="yellow">
+    		<number>
+            21
+            </number>
+            <element>
+            Sc
+            </element>
+            <element_name>
+            Scandium
+            </element_name>
+            <atomic_number>
+            44.956
+            </atomic_number>
+    	</div></td>
+    <td><div class="yellow">
+    		<number>
+            22
+            </number>
+            <element>
+            Ti
+            </element>
+            <element_name>
+            Titanium
+            </element_name>
+            <atomic_number>
+            47.867
+            </atomic_number>
+    	</div></td>
+    <td><div class="yellow">
+    		<number>
+            23
+            </number>
+            <element>
+            V
+            </element>
+            <element_name>
+            Vanadium
+            </element_name>
+            <atomic_number>
+            50.942
+            </atomic_number>
+    	</div></td>
+    <td><div class="yellow">
+    		<number>
+            24
+            </number>
+            <element>
+            Cr
+            </element>
+            <element_name>
+            Chromium
+            </element_name>
+            <atomic_number>
+            51.996
+            </atomic_number>
+    	</div></td>
+    <td><div class="yellow">
+    		<number>
+            25
+            </number>
+            <element>
+            Mn
+            </element>
+            <element_name>
+            Maganese
+            </element_name>
+            <atomic_number>
+            54.938
+            </atomic_number>
+    	</div></td>
+    <td><div class="yellow">
+    		<number>
+            26
+            </number>
+            <element>
+            Fe
+            </element>
+            <element_name>
+            Iron
+            </element_name>
+            <atomic_number>
+            55.845
+            </atomic_number>
+    	</div></td>
+    <td><div class="yellow">
+    		<number>
+            27
+            </number>
+            <element>
+            Co
+            </element>
+            <element_name>
+            Cobalt
+            </element_name>
+            <atomic_number>
+            58.933
+            </atomic_number>
+    	</div></td>
+    <td><div class="yellow">
+    		<number>
+            28
+            </number>
+            <element>
+            Ni
+            </element>
+            <element_name>
+            Nickel
+            </element_name>
+            <atomic_number>
+            58.693
+            </atomic_number>
+    	</div></td>
+    <td><div class="yellow">
+    		<number>
+            29
+            </number>
+            <element>
+            Cu
+            </element>
+            <element_name>
+            Copper
+            </element_name>
+            <atomic_number>
+            63.546
+            </atomic_number>
+    	</div></td>
+    <td><div class="yellow">
+    		<number>
+            30
+            </number>
+            <element>
+            Zn
+            </element>
+            <element_name>
+            Zinc
+            </element_name>
+            <atomic_number>
+            65.38
+            </atomic_number>
+    	</div></td>
+    <td><div class="green">
+    		<number>
+            31
+            </number>
+            <element>
+            Ga
+            </element>
+            <element_name>
+            Gallium
+            </element_name>
+            <atomic_number>
+            69.723
+            </atomic_number>
+    	</div></td>
+    <td><div class="cyan">
+    		<number>
+            32
+            </number>
+            <element>
+            Ge
+            </element>
+            <element_name>
+            Germanium
+            </element_name>
+            <atomic_number>
+            72.631
+            </atomic_number>
+    	</div></td>
+    <td><div class="cyan">
+    		<number>
+            33
+            </number>
+            <element>
+            As
+            </element>
+            <element_name>
+            Arsenic
+            </element_name>
+            <atomic_number>
+            74.922
+            </atomic_number>
+    	</div></td>
+    <td><div class="blue">
+    		<number>
+            34
+            </number>
+            <element>
+            Se
+            </element>
+            <element_name>
+            Selenium
+            </element_name>
+            <atomic_number>
+            78.972
+            </atomic_number>
+    	</div></td>
+    <td><div class="lavender">
+    		<number>
+            35
+            </number>
+            <element>
+            Br
+            </element>
+            <element_name>
+            Bromine
+            </element_name>
+            <atomic_number>
+            79.904
+            </atomic_number>
+    	</div></td>
+    <td><div class="violet">
+    		<number>
+            36
+            </number>
+            <element>
+            Ky
+            </element>
+            <element_name>
+            Kyrpton
+            </element_name>
+            <atomic_number>
+            84.798
+            </atomic_number>
+    	</div></td>
+  </tr>
+  <tr>
+	<td><div>
+    		<number>
+            1
+            </number>
+            <element>
+            H
+            </element>
+            <element_name>
+            Hydrogen
+            </element_name>
+            <atomic_number>
+            1.008
+            </atomic_number>
+    	</div></td>
+    <td><div>
+    		<number>
+            1
+            </number>
+            <element>
+            H
+            </element>
+            <element_name>
+            Hydrogen
+            </element_name>
+            <atomic_number>
+            1.008
+            </atomic_number>
+    	</div></td>
+    <td><div>
+    		<number>
+            1
+            </number>
+            <element>
+            H
+            </element>
+            <element_name>
+            Hydrogen
+            </element_name>
+            <atomic_number>
+            1.008
+            </atomic_number>
+    	</div></td>
+    <td><div>
+    		<number>
+            1
+            </number>
+            <element>
+            H
+            </element>
+            <element_name>
+            Hydrogen
+            </element_name>
+            <atomic_number>
+            1.008
+            </atomic_number>
+    	</div></td>
+    <td><div>
+    		<number>
+            1
+            </number>
+            <element>
+            H
+            </element>
+            <element_name>
+            Hydrogen
+            </element_name>
+            <atomic_number>
+            1.008
+            </atomic_number>
+    	</div></td>
+    <td><div>
+    		<number>
+            1
+            </number>
+            <element>
+            H
+            </element>
+            <element_name>
+            Hydrogen
+            </element_name>
+            <atomic_number>
+            1.008
+            </atomic_number>
+    	</div></td>
+    <td><div>
+    		<number>
+            1
+            </number>
+            <element>
+            H
+            </element>
+            <element_name>
+            Hydrogen
+            </element_name>
+            <atomic_number>
+            1.008
+            </atomic_number>
+    	</div></td>
+    <td><div>
+    		<number>
+            1
+            </number>
+            <element>
+            H
+            </element>
+            <element_name>
+            Hydrogen
+            </element_name>
+            <atomic_number>
+            1.008
+            </atomic_number>
+    	</div></td>
+    <td><div>
+    		<number>
+            1
+            </number>
+            <element>
+            H
+            </element>
+            <element_name>
+            Hydrogen
+            </element_name>
+            <atomic_number>
+            1.008
+            </atomic_number>
+    	</div></td>
+    <td><div>
+    		<number>
+            1
+            </number>
+            <element>
+            H
+            </element>
+            <element_name>
+            Hydrogen
+            </element_name>
+            <atomic_number>
+            1.008
+            </atomic_number>
+    	</div></td>
+    <td><div>
+    		<number>
+            1
+            </number>
+            <element>
+            H
+            </element>
+            <element_name>
+            Hydrogen
+            </element_name>
+            <atomic_number>
+            1.008
+            </atomic_number>
+    	</div></td>
+    <td><div>
+    		<number>
+            1
+            </number>
+            <element>
+            H
+            </element>
+            <element_name>
+            Hydrogen
+            </element_name>
+            <atomic_number>
+            1.008
+            </atomic_number>
+    	</div></td>
+    <td><div>
+    		<number>
+            1
+            </number>
+            <element>
+            H
+            </element>
+            <element_name>
+            Hydrogen
+            </element_name>
+            <atomic_number>
+            1.008
+            </atomic_number>
+    	</div></td>
+    <td><div>
+    		<number>
+            1
+            </number>
+            <element>
+            H
+            </element>
+            <element_name>
+            Hydrogen
+            </element_name>
+            <atomic_number>
+            1.008
+            </atomic_number>
+    	</div></td>
+    <td><div>
+    		<number>
+            1
+            </number>
+            <element>
+            H
+            </element>
+            <element_name>
+            Hydrogen
+            </element_name>
+            <atomic_number>
+            1.008
+            </atomic_number>
+    	</div></td>
+    <td><div>
+    		<number>
+            1
+            </number>
+            <element>
+            H
+            </element>
+            <element_name>
+            Hydrogen
+            </element_name>
+            <atomic_number>
+            1.008
+            </atomic_number>
+    	</div></td>
+    <td><div>
+    		<number>
+            1
+            </number>
+            <element>
+            H
+            </element>
+            <element_name>
+            Hydrogen
+            </element_name>
+            <atomic_number>
+            1.008
+            </atomic_number>
+    	</div></td>
+    <td><div>
+    		<number>
+            1
+            </number>
+            <element>
+            H
+            </element>
+            <element_name>
+            Hydrogen
+            </element_name>
+            <atomic_number>
+            1.008
+            </atomic_number>
+    	</div></td>
+  </tr>
+  <tr>
+	<td><div>
+    		<number>
+            1
+            </number>
+            <element>
+            H
+            </element>
+            <element_name>
+            Hydrogen
+            </element_name>
+            <atomic_number>
+            1.008
+            </atomic_number>
+    	</div></td>
+    <td><div>
+    		<number>
+            1
+            </number>
+            <element>
+            H
+            </element>
+            <element_name>
+            Hydrogen
+            </element_name>
+            <atomic_number>
+            1.008
+            </atomic_number>
+    	</div></td>
+    <td><div class="pink">
+    		<number>
+            1
+            </number>
+            <element>
+            &nbsp;
+            </element>
+            <element_name>
+            &nbsp;
+            </element_name>
+            <atomic_number>
+            &nbsp;
+            </atomic_number>
+    	</div></td>
+    <td><div>
+    		<number>
+            1
+            </number>
+            <element>
+            H
+            </element>
+            <element_name>
+            Hydrogen
+            </element_name>
+            <atomic_number>
+            1.008
+            </atomic_number>
+    	</div></td>
+    <td><div>
+    		<number>
+            1
+            </number>
+            <element>
+            H
+            </element>
+            <element_name>
+            Hydrogen
+            </element_name>
+            <atomic_number>
+            1.008
+            </atomic_number>
+    	</div></td>
+    <td><div>
+    		<number>
+            1
+            </number>
+            <element>
+            H
+            </element>
+            <element_name>
+            Hydrogen
+            </element_name>
+            <atomic_number>
+            1.008
+            </atomic_number>
+    	</div></td>
+    <td><div>
+    		<number>
+            1
+            </number>
+            <element>
+            H
+            </element>
+            <element_name>
+            Hydrogen
+            </element_name>
+            <atomic_number>
+            1.008
+            </atomic_number>
+    	</div></td>
+    <td><div>
+    		<number>
+            1
+            </number>
+            <element>
+            H
+            </element>
+            <element_name>
+            Hydrogen
+            </element_name>
+            <atomic_number>
+            1.008
+            </atomic_number>
+    	</div></td>
+    <td><div>
+    		<number>
+            1
+            </number>
+            <element>
+            H
+            </element>
+            <element_name>
+            Hydrogen
+            </element_name>
+            <atomic_number>
+            1.008
+            </atomic_number>
+    	</div></td>
+    <td><div>
+    		<number>
+            1
+            </number>
+            <element>
+            H
+            </element>
+            <element_name>
+            Hydrogen
+            </element_name>
+            <atomic_number>
+            1.008
+            </atomic_number>
+    	</div></td>
+    <td><div>
+    		<number>
+            1
+            </number>
+            <element>
+            H
+            </element>
+            <element_name>
+            Hydrogen
+            </element_name>
+            <atomic_number>
+            1.008
+            </atomic_number>
+    	</div></td>
+    <td><div>
+    		<number>
+            1
+            </number>
+            <element>
+            H
+            </element>
+            <element_name>
+            Hydrogen
+            </element_name>
+            <atomic_number>
+            1.008
+            </atomic_number>
+    	</div></td>
+    <td><div>
+    		<number>
+            1
+            </number>
+            <element>
+            H
+            </element>
+            <element_name>
+            Hydrogen
+            </element_name>
+            <atomic_number>
+            1.008
+            </atomic_number>
+    	</div></td>
+    <td><div>
+    		<number>
+            1
+            </number>
+            <element>
+            H
+            </element>
+            <element_name>
+            Hydrogen
+            </element_name>
+            <atomic_number>
+            1.008
+            </atomic_number>
+    	</div></td>
+    <td><div>
+    		<number>
+            1
+            </number>
+            <element>
+            H
+            </element>
+            <element_name>
+            Hydrogen
+            </element_name>
+            <atomic_number>
+            1.008
+            </atomic_number>
+    	</div></td>
+    <td><div>
+    		<number>
+            1
+            </number>
+            <element>
+            H
+            </element>
+            <element_name>
+            Hydrogen
+            </element_name>
+            <atomic_number>
+            1.008
+            </atomic_number>
+    	</div></td>
+    <td><div>
+    		<number>
+            1
+            </number>
+            <element>
+            H
+            </element>
+            <element_name>
+            Hydrogen
+            </element_name>
+            <atomic_number>
+            1.008
+            </atomic_number>
+    	</div></td>
+    <td><div>
+    		<number>
+            1
+            </number>
+            <element>
+            H
+            </element>
+            <element_name>
+            Hydrogen
+            </element_name>
+            <atomic_number>
+            1.008
+            </atomic_number>
+    	</div></td>
+  </tr>
+  <tr>
+	<td><div>
+    		<number>
+            1
+            </number>
+            <element>
+            H
+            </element>
+            <element_name>
+            Hydrogen
+            </element_name>
+            <atomic_number>
+            1.008
+            </atomic_number>
+    	</div></td>
+    <td><div>
+    		<number>
+            1
+            </number>
+            <element>
+            H
+            </element>
+            <element_name>
+            Hydrogen
+            </element_name>
+            <atomic_number>
+            1.008
+            </atomic_number>
+    	</div></td>
+    <td><div class="magenta">
+    		<number>
+            1
+            </number>
+            <element>
+            &nbsp;
+            </element>
+            <element_name>
+            &nbsp;
+            </element_name>
+            <atomic_number>
+            &nbsp;
+            </atomic_number>
+    	</div></td>
+    <td><div>
+    		<number>
+            1
+            </number>
+            <element>
+            H
+            </element>
+            <element_name>
+            Hydrogen
+            </element_name>
+            <atomic_number>
+            1.008
+            </atomic_number>
+    	</div></td>
+    <td><div>
+    		<number>
+            1
+            </number>
+            <element>
+            H
+            </element>
+            <element_name>
+            Hydrogen
+            </element_name>
+            <atomic_number>
+            1.008
+            </atomic_number>
+    	</div></td>
+    <td><div>
+    		<number>
+            1
+            </number>
+            <element>
+            H
+            </element>
+            <element_name>
+            Hydrogen
+            </element_name>
+            <atomic_number>
+            1.008
+            </atomic_number>
+    	</div></td>
+    <td><div>
+    		<number>
+            1
+            </number>
+            <element>
+            H
+            </element>
+            <element_name>
+            Hydrogen
+            </element_name>
+            <atomic_number>
+            1.008
+            </atomic_number>
+    	</div></td>
+    <td><div>
+    		<number>
+            1
+            </number>
+            <element>
+            H
+            </element>
+            <element_name>
+            Hydrogen
+            </element_name>
+            <atomic_number>
+            1.008
+            </atomic_number>
+    	</div></td>
+    <td><div>
+    		<number>
+            1
+            </number>
+            <element>
+            H
+            </element>
+            <element_name>
+            Hydrogen
+            </element_name>
+            <atomic_number>
+            1.008
+            </atomic_number>
+    	</div></td>
+    <td><div>
+    		<number>
+            1
+            </number>
+            <element>
+            H
+            </element>
+            <element_name>
+            Hydrogen
+            </element_name>
+            <atomic_number>
+            1.008
+            </atomic_number>
+    	</div></td>
+    <td><div>
+    		<number>
+            1
+            </number>
+            <element>
+            H
+            </element>
+            <element_name>
+            Hydrogen
+            </element_name>
+            <atomic_number>
+            1.008
+            </atomic_number>
+    	</div></td>
+    <td><div>
+    		<number>
+            1
+            </number>
+            <element>
+            H
+            </element>
+            <element_name>
+            Hydrogen
+            </element_name>
+            <atomic_number>
+            1.008
+            </atomic_number>
+    	</div></td>
+    <td><div>
+    		<number>
+            1
+            </number>
+            <element>
+            H
+            </element>
+            <element_name>
+            Hydrogen
+            </element_name>
+            <atomic_number>
+            1.008
+            </atomic_number>
+    	</div></td>
+    <td><div>
+    		<number>
+            1
+            </number>
+            <element>
+            H
+            </element>
+            <element_name>
+            Hydrogen
+            </element_name>
+            <atomic_number>
+            1.008
+            </atomic_number>
+    	</div></td>
+    <td><div>
+    		<number>
+            1
+            </number>
+            <element>
+            H
+            </element>
+            <element_name>
+            Hydrogen
+            </element_name>
+            <atomic_number>
+            1.008
+            </atomic_number>
+    	</div></td>
+    <td><div>
+    		<number>
+            1
+            </number>
+            <element>
+            H
+            </element>
+            <element_name>
+            Hydrogen
+            </element_name>
+            <atomic_number>
+            1.008
+            </atomic_number>
+    	</div></td>
+    <td><div>
+    		<number>
+            1
+            </number>
+            <element>
+            H
+            </element>
+            <element_name>
+            Hydrogen
+            </element_name>
+            <atomic_number>
+            1.008
+            </atomic_number>
+    	</div></td>
+    <td><div>
+    		<number>
+            1
+            </number>
+            <element>
+            H
+            </element>
+            <element_name>
+            Hydrogen
+            </element_name>
+            <atomic_number>
+            1.008
+            </atomic_number>
+    	</div></td>
+  </tr>
+</table>
+
+
+<table class="second">
+  <tr>
+    <td><div>
+    		<number>
+            57
+            </number>
+            <element>
+            La
+            </element>
+            <element_name>
+            Lanthanum
+            </element_name>
+            <atomic_number>
+            138.905
+            </atomic_number>
+    	</div></td>
+    <td><div>
+    		<number>
+            58
+            </number>
+            <element>
+            Ce
+            </element>
+            <element_name>
+            Cerium
+            </element_name>
+            <atomic_number>
+            14.116
+            </atomic_number>
+    	</div></td>
+    <td><div>
+    		<number>
+            59
+            </number>
+            <element>
+            Pr
+            </element>
+            <element_name>
+            Praseodymium
+            </element_name>
+            <atomic_number>
+            140.908
+            </atomic_number>
+    	</div></td>
+    <td><div>
+    		<number>
+            1
+            </number>
+            <element>
+            H
+            </element>
+            <element_name>
+            Hydrogen
+            </element_name>
+            <atomic_number>
+            1.008
+            </atomic_number>
+    	</div></td>
+    <td><div>
+    		<number>
+            1
+            </number>
+            <element>
+            H
+            </element>
+            <element_name>
+            Hydrogen
+            </element_name>
+            <atomic_number>
+            1.008
+            </atomic_number>
+    	</div></td>
+    <td><div>
+    		<number>
+            1
+            </number>
+            <element>
+            H
+            </element>
+            <element_name>
+            Hydrogen
+            </element_name>
+            <atomic_number>
+            1.008
+            </atomic_number>
+    	</div></td>
+    <td><div>
+    		<number>
+            1
+            </number>
+            <element>
+            H
+            </element>
+            <element_name>
+            Hydrogen
+            </element_name>
+            <atomic_number>
+            1.008
+            </atomic_number>
+    	</div></td>
+    <td><div>
+    		<number>
+            1
+            </number>
+            <element>
+            H
+            </element>
+            <element_name>
+            Hydrogen
+            </element_name>
+            <atomic_number>
+            1.008
+            </atomic_number>
+    	</div></td>
+    <td><div>
+    		<number>
+            1
+            </number>
+            <element>
+            H
+            </element>
+            <element_name>
+            Hydrogen
+            </element_name>
+            <atomic_number>
+            1.008
+            </atomic_number>
+    	</div></td>
+    <td><div>
+    		<number>
+            1
+            </number>
+            <element>
+            H
+            </element>
+            <element_name>
+            Hydrogen
+            </element_name>
+            <atomic_number>
+            1.008
+            </atomic_number>
+    	</div></td>
+    <td><div>
+    		<number>
+            1
+            </number>
+            <element>
+            H
+            </element>
+            <element_name>
+            Hydrogen
+            </element_name>
+            <atomic_number>
+            1.008
+            </atomic_number>
+    	</div></td>
+    <td><div>
+    		<number>
+            1
+            </number>
+            <element>
+            H
+            </element>
+            <element_name>
+            Hydrogen
+            </element_name>
+            <atomic_number>
+            1.008
+            </atomic_number>
+    	</div></td>
+    <td><div>
+    		<number>
+            1
+            </number>
+            <element>
+            H
+            </element>
+            <element_name>
+            Hydrogen
+            </element_name>
+            <atomic_number>
+            1.008
+            </atomic_number>
+    	</div></td>
+    <td><div>
+    		<number>
+            1
+            </number>
+            <element>
+            H
+            </element>
+            <element_name>
+            Hydrogen
+            </element_name>
+            <atomic_number>
+            1.008
+            </atomic_number>
+    	</div></td>
+    <td><div>
+    		<number>
+            1
+            </number>
+            <element>
+            H
+            </element>
+            <element_name>
+            Hydrogen
+            </element_name>
+            <atomic_number>
+            1.008
+            </atomic_number>
+    	</div></td>
+  </tr>
+  <tr>
+    <td><div>
+    		<number>
+            89
+            </number>
+            <element>
+            Ac
+            </element>
+            <element_name>
+            Actinium
+            </element_name>
+            <atomic_number>
+            227.028
+            </atomic_number>
+    	</div></td>
+    <td><div>
+    		<number>
+            1
+            </number>
+            <element>
+            H
+            </element>
+            <element_name>
+            Hydrogen
+            </element_name>
+            <atomic_number>
+            1.008
+            </atomic_number>
+    	</div></td>
+    <td><div>
+    		<number>
+            1
+            </number>
+            <element>
+            H
+            </element>
+            <element_name>
+            Hydrogen
+            </element_name>
+            <atomic_number>
+            1.008
+            </atomic_number>
+    	</div></td>
+    <td><div>
+    		<number>
+            1
+            </number>
+            <element>
+            H
+            </element>
+            <element_name>
+            Hydrogen
+            </element_name>
+            <atomic_number>
+            1.008
+            </atomic_number>
+    	</div></td>
+    <td><div>
+    		<number>
+            1
+            </number>
+            <element>
+            H
+            </element>
+            <element_name>
+            Hydrogen
+            </element_name>
+            <atomic_number>
+            1.008
+            </atomic_number>
+    	</div></td>
+    <td><div>
+    		<number>
+            1
+            </number>
+            <element>
+            H
+            </element>
+            <element_name>
+            Hydrogen
+            </element_name>
+            <atomic_number>
+            1.008
+            </atomic_number>
+    	</div></td>
+    <td><div>
+    		<number>
+            1
+            </number>
+            <element>
+            H
+            </element>
+            <element_name>
+            Hydrogen
+            </element_name>
+            <atomic_number>
+            1.008
+            </atomic_number>
+    	</div></td>
+    <td><div>
+    		<number>
+            1
+            </number>
+            <element>
+            H
+            </element>
+            <element_name>
+            Hydrogen
+            </element_name>
+            <atomic_number>
+            1.008
+            </atomic_number>
+    	</div></td>
+    <td><div>
+    		<number>
+            1
+            </number>
+            <element>
+            H
+            </element>
+            <element_name>
+            Hydrogen
+            </element_name>
+            <atomic_number>
+            1.008
+            </atomic_number>
+    	</div></td>
+    <td><div>
+    		<number>
+            1
+            </number>
+            <element>
+            H
+            </element>
+            <element_name>
+            Hydrogen
+            </element_name>
+            <atomic_number>
+            1.008
+            </atomic_number>
+    	</div></td>
+    <td><div>
+    		<number>
+            1
+            </number>
+            <element>
+            H
+            </element>
+            <element_name>
+            Hydrogen
+            </element_name>
+            <atomic_number>
+            1.008
+            </atomic_number>
+    	</div></td>
+    <td><div>
+    		<number>
+            1
+            </number>
+            <element>
+            H
+            </element>
+            <element_name>
+            Hydrogen
+            </element_name>
+            <atomic_number>
+            1.008
+            </atomic_number>
+    	</div></td>
+    <td><div>
+    		<number>
+            1
+            </number>
+            <element>
+            H
+            </element>
+            <element_name>
+            Hydrogen
+            </element_name>
+            <atomic_number>
+            1.008
+            </atomic_number>
+    	</div></td>
+    <td><div>
+    		<number>
+            1
+            </number>
+            <element>
+            H
+            </element>
+            <element_name>
+            Hydrogen
+            </element_name>
+            <atomic_number>
+            1.008
+            </atomic_number>
+    	</div></td>
+    <td><div>
+    		<number>
+            1
+            </number>
+            <element>
+            H
+            </element>
+            <element_name>
+            Hydrogen
+            </element_name>
+            <atomic_number>
+            1.008
+            </atomic_number>
+    	</div></td>
+  </tr>
+</table>
+
+<table class="third">
+  <tr class="third_row">
+    <td><div class="third_div">
+            <element_name class="element_mini">
+            Line One
+            </element_name>
+            <element_name class="element_mini">
+            Line Two
+            </element_name>
+    	</div></td>
+    <td><div class="third_div">
+            <element_name class="element_mini">
+            Line One
+            </element_name>
+            <element_name class="element_mini">
+            Line Two
+            </element_name>
+    	</div></td>
+    <td><div class="third_div">
+            <element_name class="element_mini">
+            Line One
+            </element_name>
+            <element_name class="element_mini">
+            Line Two
+            </element_name>
+    	</div></td>
+    <td><div class="third_div">
+            <element_name class="element_mini">
+            Line One
+            </element_name>
+            <element_name class="element_mini">
+            Line Two
+            </element_name>
+    	</div></td>
+    <td><div class="third_div">
+            <element_name class="single_line element_mini">
+            Line One
+            </element_name>
+    	</div></td>
+    <td><div class="third_div">
+            <element_name class="single_line element_mini">
+            Line One
+            </element_name>
+    	</div></td>
+    <td><div class="third_div">
+            <element_name class="single_line element_mini">
+            Line One
+            </element_name>
+    	</div></td>
+    <td><div class="third_div">
+            <element_name class="element_mini">
+            Line One
+            </element_name>
+            <element_name class="element_mini">
+            Line Two
+            </element_name>
+    	</div></td>
+    <td><div class="third_div">
+            <element_name class="single_line element_mini">
+            Line One
+            </element_name>
+
+    	</div></td>
+    <td><div class="third_div">
+            <element_name class="single_line element_mini">
+            Line One
+            </element_name>
+
+    	</div></td>
+
+  </tr>
+</table>
+
+</body>
+</html>
